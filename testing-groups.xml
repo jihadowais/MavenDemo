@@ -1,0 +1,43 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Regression TestSuite">
+    <test name="GroupsDemo">
+        <groups>
+            <define name="All">
+                <include name="Mobile"></include>
+                <include name="Browser"></include>
+            </define>
+            <define name="AllMobiles">
+                <include name="Mobile"></include>
+            </define>
+            <define name="AllBrowsers">
+                <include name="Browser"></include>
+            </define>
+            <define name="AllMobilesLowVersions">
+                <include name="LowVersions"></include>
+            </define>
+            <define name="IOSDevices">
+                <include name="IOS"></include>
+            </define>
+            <define name="AndroidDevices">
+                <include name="Android"></include>
+            </define>
+            <define name="GoogleChrome">
+                <include name="Chrome"></include>
+            </define>
+            <define name="Firefox">
+                <include name="Firefox"></include>
+            </define>
+
+            <run>
+                <include name="IOS"></include>
+                <!-- <include name="Android"></include> -->
+                <!-- <include name="AllBrowsers"></include> -->
+                <!-- <include name="All"></include> -->
+            </run>
+        </groups>
+        <classes>
+            <class name="org.example.testNG_practicing.GroupingDemoTest"></class>
+        </classes>
+    </test>
+</suite>
