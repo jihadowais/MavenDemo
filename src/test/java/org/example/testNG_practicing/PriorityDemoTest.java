@@ -18,7 +18,7 @@ public class PriorityDemoTest {
     @Test(priority = 1)
     public void testMethodA(){
         System.out.println("PriorityDemo Class -> @Test Annotation. testMethodA() test method.");
-        Assert.assertTrue(false);
+        Assert.fail();
     }
 
     @Test(priority = 2)
