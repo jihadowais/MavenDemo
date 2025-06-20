@@ -7,20 +7,20 @@ import org.testng.annotations.Test;
 
 public class PriorityDemoTest {
     @BeforeClass
-    public void setUp(){ System.out.println("PriorityDemo Class -> @BeforeClass Annotation. setUp() method."); }
+    public void setUp(){ System.out.println("PriorityDemoTest Class -> @BeforeClass Annotation. setUp() method."); }
 
     @AfterClass
-    public void clean(){ System.out.println("PriorityDemo Class -> @AfterClass Annotation. clean() method."); }
+    public void clean(){ System.out.println("PriorityDemoTest Class -> @AfterClass Annotation. clean() method."); }
 
     @Test(priority = 0)
-    public void testMethodB(){ System.out.println("PriorityDemo Class -> @Test Annotation. testMethodB() test method."); }
+    public void testMethodB(){ System.out.println("PriorityDemoTest Class -> @Test Annotation. testMethodB() test method."); }
 
     @Test(priority = 1)
     public void testMethodA(){
-        System.out.println("PriorityDemo Class -> @Test Annotation. testMethodA() test method.");
+        System.out.println("PriorityDemoTest Class -> @Test Annotation. testMethodA() test method.");
         Assert.fail();
     }
 
     @Test(priority = 2)
-    public void testMethodC(){ System.out.println("PriorityDemo Class -> @Test Annotation. testMethodC() test method."); }
+    public void testMethodC(){ System.out.println("PriorityDemoTest Class -> @Test Annotation. testMethodC() test method."); }
 }
