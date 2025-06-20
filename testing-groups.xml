@@ -28,12 +28,16 @@
             <define name="Firefox">
                 <include name="Firefox"></include>
             </define>
+            <define name="Opera">
+                <include name="Opera"></include>
+            </define>
 
             <run>
-                <include name="IOS"></include>
+                <!-- <include name="IOS"></include> -->
                 <!-- <include name="Android"></include> -->
-                <!-- <include name="AllBrowsers"></include> -->
                 <!-- <include name="All"></include> -->
+                <include name="AllBrowsers"></include>
+                <exclude name="Opera"></exclude>
             </run>
         </groups>
         <classes>

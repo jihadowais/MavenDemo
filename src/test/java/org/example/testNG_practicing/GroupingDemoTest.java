@@ -32,4 +32,7 @@ public class GroupingDemoTest {
     @Test(groups = {"Firefox", "Browser"})
     public void testFirefox(){ System.out.println("GroupingDemoTest Class -> @Test Annotation. Running testFirefox() test method..."); }
 
+    @Test(groups = {"Opera", "Browser"})
+    public void testOpera(){ System.out.println("GroupingDemoTest Class -> @Test Annotation. Running testOpera() test method..."); }
+
 }
