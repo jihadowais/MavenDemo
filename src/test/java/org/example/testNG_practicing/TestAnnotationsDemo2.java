@@ -65,11 +65,12 @@ public class TestAnnotationsDemo2 {
     public void afterMethod () { System.out.println("TestAnnotationsDemo2 class: This will run after running any test method."); }
 
     @Test
+    @Ignore
     public void testMethod1() {
         System.out.println("TestAnnotationsDemo2 class: This is my test method 1.");
     }
 
-    @Test
+    @Test(enabled = false)
     public void testMethod2() {
         System.out.println("TestAnnotationsDemo2 class: This is my test method 2.");
     }
