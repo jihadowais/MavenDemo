@@ -5,22 +5,29 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class PriorityDemo {
+public class DependencyDemoTest {
     @BeforeClass
     public void setUp(){ System.out.println("PriorityDemo Class -> @BeforeClass Annotation. setUp() method."); }
 
     @AfterClass
     public void clean(){ System.out.println("PriorityDemo Class -> @AfterClass Annotation. clean() method."); }
 
-    @Test(priority = 0)
+    @Test(priority = 1, dependsOnMethods = {"testMethodC", "testMethodD"})
     public void testMethodB(){ System.out.println("PriorityDemo Class -> @Test Annotation. testMethodB() test method."); }
 
-    @Test(priority = 1)
+    @Test(priority = 2)
     public void testMethodA(){
         System.out.println("PriorityDemo Class -> @Test Annotation. testMethodA() test method.");
-        Assert.assertTrue(false);
     }
 
-    @Test(priority = 2)
-    public void testMethodC(){ System.out.println("PriorityDemo Class -> @Test Annotation. testMethodC() test method."); }
+    @Test(priority = 4)
+    public void testMethodC(){
+        System.out.println("PriorityDemo Class -> @Test Annotation. testMethodC() test method.");
+        Assert.fail();
+    }
+
+    @Test(priority = 3)
+    public void testMethodD(){
+        System.out.println("PriorityDemo Class -> @Test Annotation. testMethodD() test method.");
+    }
 }
