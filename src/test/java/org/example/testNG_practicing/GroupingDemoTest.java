@@ -11,7 +11,7 @@ public class GroupingDemoTest {
     @AfterClass(alwaysRun = false)
     public void clean(){ System.out.println("GroupingDemoTest Class -> @AfterClass Annotation. clean() method."); }
 
-    @Test(groups = {"IOS", "Mobile", "Mobile"})
+    @Test(groups = {"IOS", "Mobile"})
     public void testIOS13(){ System.out.println("GroupingDemoTest Class -> @Test Annotation. Running testIOS13() test method..."); }
 
     @Test(groups = {"IOS", "LowVersions", "Mobile"})
