@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Custom Parameters Test Suite">
+    <test name="Custom Parameters Tests">
+        <parameter name="browser" value="firefox"></parameter>
+        <parameter name="OS" value="mac"></parameter>
+        <parameter name="Models" value="IOS17,IOS18"></parameter>
+
+        <classes>
+            <class name="org.example.testNG_practicing.CustomParameters.CustomParametersDemoTest"></class>
+        </classes>
+    </test>
+
+</suite>
