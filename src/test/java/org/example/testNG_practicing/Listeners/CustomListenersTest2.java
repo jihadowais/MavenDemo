@@ -14,4 +14,7 @@ public class CustomListenersTest2 {
 
     @Test(dependsOnMethods = "testMethod1")
     public void testMethod2() { System.out.println("@Test -> This is my test method 2. [CustomListenersTest2]"); }
+
+    @Test
+    public void testMethod3() { System.out.println("@Test -> This is my test method 3. [CustomListenersTest2]"); }
 }
