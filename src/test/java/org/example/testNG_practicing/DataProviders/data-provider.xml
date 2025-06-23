@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Data Provider Suite" parallel="methods" thread-count="2">
+    <test name="Data Provider Test">
+        <classes>
+            <class name="org.example.testNG_practicing.DataProviders.DataProviderParallelTest"></class>
+        </classes>
+    </test>
+</suite>
