@@ -3,8 +3,8 @@ package org.example.testNG_practicing.DataProviders;
 import org.testng.annotations.DataProvider;
 
 public class DataProviderClass {
-    @DataProvider(name = "sum")
-    public Object[][] getSum() {
+    @DataProvider
+    public Object[][] getSumData() {
         return new Object[][] {
                 {0, 0, 0, 0},
                 {3, 1, 1, 1},
@@ -13,8 +13,8 @@ public class DataProviderClass {
         };
     }
 
-    @DataProvider(name = "absolute")
-    public Object[][] getAbsolute() {
+    @DataProvider
+    public Object[][] getAbsoluteData() {
         return new Object[][] {
                 {0, 0, 0},
                 {0, 8, 8},

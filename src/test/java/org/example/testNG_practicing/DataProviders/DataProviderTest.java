@@ -5,8 +5,8 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class DataProviderTest {
-    @DataProvider(name = "fullname")
-    public Object[][] getFullName() {
+    @DataProvider
+    public Object[][] getFullNameData() {
         return new Object[][] {
                 {"Loujain Ammer", "Loujain", "Ammer"},
                 {"Mohammed Ahmad", "Mohammed", "Ahmad"},
@@ -14,7 +14,7 @@ public class DataProviderTest {
         };
     }
 
-    @Test(dataProvider = "fullname")
+    @Test(dataProvider = "getFullNameData")
     public void testFullName(String expected, String firstname, String lastname) {
         String actual = ClassUnderTest.getFullName(firstname, lastname);
         Assert.assertEquals(actual, expected);
