@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Parallel Exec. Tests by 'methods' Suite" parallel="methods" thread-count="2">
+    <test name="Parallel Exec. Tests by 'methods' Test">
+        <classes>
+            <class name="org.example.testNG_practicing.ParallelExecution.ParallelExecTestsByMethod"></class>
+        </classes>
+    </test>
+</suite>
