@@ -1,6 +1,5 @@
 package org.example.testNG_practicing.DataProviders;
 
-import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
