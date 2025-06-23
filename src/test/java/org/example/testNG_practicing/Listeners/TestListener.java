@@ -5,7 +5,7 @@ import org.testng.ITestListener;
 import org.testng.ITestNGMethod;
 import org.testng.ITestResult;
 
-public class CustomITestListeners implements ITestListener {
+public class TestListener implements ITestListener {
     @Override
     public void onTestStart(ITestResult result) {
         System.out.println("onTestStart -> Invoked when TM starts.");

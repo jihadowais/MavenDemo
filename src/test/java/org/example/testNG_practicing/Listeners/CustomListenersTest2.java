@@ -4,7 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-@Listeners(CustomITestListeners.class)
+@Listeners(TestListener.class)
 public class CustomListenersTest2 {
     @Test
     public void testMethod1() {

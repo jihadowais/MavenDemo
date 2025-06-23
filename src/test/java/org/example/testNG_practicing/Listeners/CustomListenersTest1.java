@@ -2,7 +2,7 @@ package org.example.testNG_practicing.Listeners;
 
 import org.testng.annotations.*;
 
-@Listeners(CustomITestListeners.class)
+@Listeners(TestListener.class)
 public class CustomListenersTest1 {
     @BeforeTest
     public void beforeTest() { System.out.println("@BeforeTest -> This will run before running the <test>."); }
