@@ -40,9 +40,9 @@ public class AssertionTest {
     @Test
     public void testFullName(){
         System.out.println("Running Test -> testFullName...");
-        String expectedFullName = "Loujain Amer";
+        String expectedFullName = "Loujain Ammer";
         String testDataFirstName = "Loujain";
-        String testDataLastName = "Amer";
+        String testDataLastName = "Ammer";
 
         String actualFullName = ClassUnderTest.getFullName(testDataFirstName, testDataLastName);
         Assert.assertEquals(actualFullName, expectedFullName);
